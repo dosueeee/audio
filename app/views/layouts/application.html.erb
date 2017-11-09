@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Audio</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>Audio</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  <body>
-    <%= yield %>
-  </body>
+</head>
+
+<body>
+
+<!-- サイドバー -->
+<div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:4; background-color: rgba(189, 83, 83, 0.97);" id="mySidebar">
+  <button class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-close">Close &times;</i></button>
+  <a href="#" class="w3-bar-item w3-button">ホーム</a>
+  <a href="#" class="w3-bar-item w3-button">ランキング</a>
+  <a href="#" class="w3-bar-item w3-button">新着順</a>
+</div>
+
+<!-- Overlay -->
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer"></div>
+
+<!-- Page content -->
+<button class="w3-button w3-xxlarge" onclick="w3_open()">&#9776;</button>
+<div class="w3-container">
+</div>
+
+
+<%= render 'layouts/header' %>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<%= yield %>
+<%= render 'layouts/footer' %>
+
+</body>
 </html>
