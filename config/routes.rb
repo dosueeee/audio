@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'contents/index'
 
   root "contents#index"
+  get "contents/show" => "contents#show"
 end
