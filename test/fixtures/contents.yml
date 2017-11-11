@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  audio1_name: MyString
+  audio1: MyString
+  audio2_name: MyString
+  audio2: MyString
+
+two:
+  title: MyString
+  audio1_name: MyString
+  audio1: MyString
+  audio2_name: MyString
+  audio2: MyString
