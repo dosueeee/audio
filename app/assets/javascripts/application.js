@@ -22,33 +22,35 @@
 //= require semantic-ui
 //= require_tree .
 
-// semantic-uiのjs
 $(function(){
-    $('.ui.dropdown').dropdown();
-})
+    // semantic-uiのjs
+    $(function(){
+        $('.ui.dropdown').dropdown();
+    })
 
-$(window).on('scroll', function() {
-    $('#header').toggleClass('fixed', $(this).scrollTop() > 50);
+    $(window).on('scroll', function() {
+        $('#header').toggleClass('fixed', $(this).scrollTop() > 50);
+    });
+
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // audio再生
+    $(function() {
+        $("#play").on("click", function() {
+            $("#sampleAudio").playbackRate = 1;
+            $("#sampleAudio").play();
+        })
+
+        $("#pause").on("click", function() {
+            document.getElementById("sampleAudio").pause();
+        });
+    });
 });
-
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-// // audio再生
-// $(function() {
-//     $("#play").on("click", function() {
-//         document.getElementById("sampleAudio").playbackRate = 1;
-//         document.getElementById("sampleAudio").play();
-//     })
-//
-//     $("#pause").on("click", function() {
-//         document.getElementById("sampleAudio").pause();
-//     });
-// });
