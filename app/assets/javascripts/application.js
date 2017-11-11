@@ -40,3 +40,15 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
+
+// // audio再生
+// $(function() {
+//     $("#play").on("click", function() {
+//         document.getElementById("sampleAudio").playbackRate = 1;
+//         document.getElementById("sampleAudio").play();
+//     })
+//
+//     $("#pause").on("click", function() {
+//         document.getElementById("sampleAudio").pause();
+//     });
+// });
