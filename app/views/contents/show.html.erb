@@ -25,6 +25,9 @@
     <div class="ui segment">
       <p>タイトルコール</p>
       <h6>00:03</h6>
+      <div id="audio-content">
+        <%= audio_tag("audio1", id: "sampleAudio", controls: true)%>
+      </div>
       <div class="listlist">
         <div class="ui two bottom attached buttons">
           <div class="ui button">
@@ -104,9 +107,3 @@
     </div>
   </div>
 </div>
-
-<div id="content">
-    <%= audio_tag("audio1", id: "sampleAudio", controls: true)%>
-</div>
-<!--<button id="play">再生</button>-->
-<!--<button id="pause">一時停止</button>-->

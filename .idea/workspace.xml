@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d1923f1-81e4-4f40-8fb4-526dbcf29043" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/audios/rock.m4a" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contents/show.html.erb" afterPath="$PROJECT_DIR$/app/views/contents/show.html.erb" />
     </list>
@@ -20,21 +19,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/contents/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="4" selection-end-line="111" selection-end-column="36" />
+            <state relative-caret-position="435">
+              <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="55" column="3" lean-forward="false" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+            <state relative-caret-position="345">
+              <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -67,8 +66,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/contents.scss" />
         <option value="$PROJECT_DIR$/app/views/contents/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/contents/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
@@ -314,12 +313,12 @@
       <updated>1510218020376</updated>
       <workItem from="1510218023657" duration="10414000" />
       <workItem from="1510378957539" duration="78000" />
-      <workItem from="1510379040244" duration="6313000" />
+      <workItem from="1510379040244" duration="6709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16805000" />
+    <option name="totallyTimeSpent" value="17201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -525,18 +524,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/app/views/contents/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="55" column="3" lean-forward="false" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+        <state relative-caret-position="435">
+          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contents/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="4" selection-end-line="111" selection-end-column="36" />
+        <state relative-caret-position="345">
+          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
           <folding />
         </state>
       </provider>

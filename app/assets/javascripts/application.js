@@ -22,26 +22,27 @@
 //= require semantic-ui
 //= require_tree .
 
+
+// semantic-uiのjs
 $(function(){
-    // semantic-uiのjs
-    $(function(){
-        $('.ui.dropdown').dropdown();
-    })
+    $('.ui.dropdown').dropdown();
+})
 
-    $(window).on('scroll', function() {
-        $('#header').toggleClass('fixed', $(this).scrollTop() > 50);
-    });
+$(window).on('scroll', function() {
+    $('#header').toggleClass('fixed', $(this).scrollTop() > 50);
+});
 
-    function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("myOverlay").style.display = "block";
-    }
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
 
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("myOverlay").style.display = "none";
-    }
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
 
+$(function(){
     // audio再生
     $(function() {
         $("#play").on("click", function() {
