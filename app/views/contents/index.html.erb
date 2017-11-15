@@ -98,18 +98,13 @@
       <div id="audio-content">
         <%= audio_tag("yukumo4", id: "sampleAudio", controls: true)%>
       </div>
-      <!--<div class="listlist">-->
-        <!--<div class="ui two bottom attached buttons">-->
-          <!--<div class="ui button">-->
-            <!--<i class="add icon"></i>-->
-            <!--次に再生-->
-          <!--</div>-->
-          <!--<div class="ui primary button">-->
-            <!--<i class="play icon"></i>-->
-            <!--Listen-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
     </div>
   </div>
+</div>
+<div>
+  <% contents.each do |content|%>
+    <div class="contents-index-item">
+      <%= content.audio_title %>
+    </div>
+  <% end %>
 </div>
