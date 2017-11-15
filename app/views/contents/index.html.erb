@@ -1,267 +1,115 @@
-<div class="ui text container">
-  <div class="ui three column grid">
-    <div class="content-container">
-      <div class="ui card">
-        <div class="image">
-          <%= image_tag("son.jpg", :alt => "コンテンツ") %>
-        </div>
-        <div class="content">
-          <div class="header">孫正義の頭の中</div>
-          <div class="description">
-            孫正義の考え方を徹底分析
-          </div>
-        </div>
-        <div class="ui two bottom attached buttons">
-          <div class="ui button">
-            <i class="add icon"></i>
-            Queue
-          </div>
-          <div class="ui primary button">
-            <i class="play icon"></i>
-            Listen
-          </div>
-        </div>
+<!--<div class="play-container">-->
+  <!--<div class="ui small progress">-->
+    <!--<div class="bar"></div>-->
+    <!--<div class="label">14:36</div>-->
+  <!--</div>-->
+  <!--<button class="ui labeled icon button">-->
+    <!--<i class="pause icon"></i>-->
+    <!--停止-->
+  <!--</button>-->
+  <!--<button class="ui right labeled icon button">-->
+    <!--<i class="play icon"></i>-->
+    <!--全て再生-->
+  <!--</button>-->
+  <!--<div class="ui three item menu">-->
+    <!--<a class="item active">再生リスト</a>-->
+    <!--<a class="item">コメント一覧</a>-->
+    <!--<a class="item">過去のオーディオ</a>-->
+  <!--</div>-->
+<!--</div>-->
+<div class="list-container">
+  <div class="ui segments">
+    <div class="ui segment">
+      <p>1億調達した16歳天才プログラマーは日本復活をかけて東京で戦う</p>
+      <h6>Business Insider Japan</h6>
+      <h7>引用元URL：</h7>
+      <div class="ui image-div">
+        <%= image_tag("one_image1.jpg", size: "200x120")%>
       </div>
-      <div class="ui popup">
-        <div class="header">User Rating</div>
-        <div class="ui star rating" data-rating="3"></div>
+      <div id="audio-content">
+        <%= audio_tag("yukumo1", id: "sampleAudio", controls: true)%>
       </div>
+      <!--<div class="listlist">-->
+        <!--<div class="ui two bottom attached buttons">-->
+          <!--<div class="ui button">-->
+            <!--<i class="add icon"></i>-->
+            <!--次に再生-->
+          <!--</div>-->
+          <!--<div class="ui primary button">-->
+            <!--<i class="play icon"></i>-->
+            <!--Listen-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
     </div>
-    <div class="content-container">
-      <div class="ui card">
-        <div class="image">
-          <%= image_tag("maezawa.jpg", :alt => "コンテンツ") %>
-        </div>
-        <div class="content">
-          <div class="header">前澤友作の人生</div>
-          <div class="description">
-            前澤友作の人生についてインタビュー
-          </div>
-        </div>
-        <div class="ui two bottom attached buttons">
-          <div class="ui button">
-            <i class="add icon"></i>
-            Queue
-          </div>
-          <div class="ui primary button">
-            <i class="play icon"></i>
-            Listen
-          </div>
-        </div>
+    <div class="ui segment">
+      <p>東芝、テレビ事業の子会社を売却 中国家電大手のハイセンスに</p>
+      <h6>共同通信 47NEWS</h6>
+      <h7>引用元URL：</h7>
+      <div class="ui image-div">
+        <%= image_tag("image_div2.jpg", size: "200x120")%>
       </div>
-      <div class="ui popup">
-        <div class="header">User Rating</div>
-        <div class="ui star rating" data-rating="3"></div>
+      <div id="audio-content">
+        <%= audio_tag("yukumo2", id: "sampleAudio", controls: true)%>
       </div>
+      <!--<div class="listlist">-->
+        <!--<div class="ui two bottom attached buttons">-->
+          <!--<div class="ui button">-->
+            <!--<i class="add icon"></i>-->
+            <!--次に再生-->
+          <!--</div>-->
+          <!--<div class="ui primary button">-->
+            <!--<i class="play icon"></i>-->
+            <!--Listen-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
     </div>
-    <div class="content-container">
-      <div class="ui card">
-        <div class="image">
-          <%= image_tag("amazon.jpg", :alt => "コンテンツ") %>
-        </div>
-        <div class="content">
-          <div class="header">アマゾンの世界戦略</div>
-          <div class="description">
-            hogehogehoge
-          </div>
-        </div>
-        <div class="ui two bottom attached buttons">
-          <div class="ui button">
-            <i class="add icon"></i>
-            Queue
-          </div>
-          <div class="ui primary button">
-            <i class="play icon"></i>
-            Listen
-          </div>
-        </div>
+    <div class="ui segment">
+      <p>相手との絆を深めるおもてなしの会食とは？</p>
+      <h6>アメリカン・エキスプレス</h6>
+      <h7>引用元URL：</h7>
+      <div class="ui image-div">
+        <%= image_tag("image_div3.jpg", size: "200x120")%>
       </div>
-      <div class="ui popup">
-        <div class="header">User Rating</div>
-        <div class="ui star rating" data-rating="3"></div>
+      <div id="audio-content">
+        <%= audio_tag("yukumo3", id: "sampleAudio", controls: true)%>
       </div>
+      <!--<div class="listlist">-->
+        <!--<div class="ui two bottom attached buttons">-->
+          <!--<div class="ui button">-->
+            <!--<i class="add icon"></i>-->
+            <!--次に再生-->
+          <!--</div>-->
+          <!--<div class="ui primary button">-->
+            <!--<i class="play icon"></i>-->
+            <!--Listen-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
     </div>
-    <div class="content-container">
-      <div class="ui card">
-        <div class="image">
-          <%= image_tag("chance.jpg", :alt => "コンテンツ") %>
-        </div>
-        <div class="content">
-          <div class="header">日本はチャンスの宝庫</div>
-          <div class="description">
-            イノベーターズトーク
-          </div>
-        </div>
-        <div class="ui two bottom attached buttons">
-          <div class="ui button">
-            <i class="add icon"></i>
-            Queue
-          </div>
-          <div class="ui primary button">
-            <i class="play icon"></i>
-            Listen
-          </div>
-        </div>
+    <div class="ui segment">
+      <p>小池氏、希望代表辞任へ…都政に専念</p>
+      <h6>読売新聞</h6>
+      <h7>引用元URL：</h7>
+      <div class="ui image-div">
+        <%= image_tag("image_div4.jpg", size: "200x120")%>
       </div>
-      <div class="ui popup">
-        <div class="header">User Rating</div>
-        <div class="ui star rating" data-rating="3"></div>
+      <div id="audio-content">
+        <%= audio_tag("yukumo4", id: "sampleAudio", controls: true)%>
       </div>
-    </div>
-    <div class="content-container">
-      <div class="ui card">
-        <div class="image">
-          <%= image_tag("horie.jpg", :alt => "コンテンツ") %>
-        </div>
-        <div class="content">
-          <div class="header">西麻布にサブスクリプション型の銭湯を作りたい</div>
-          <div class="description">
-            堀江貴文が先頭について語る
-          </div>
-        </div>
-        <div class="ui two bottom attached buttons">
-          <div class="ui button">
-            <i class="add icon"></i>
-            Queue
-          </div>
-          <div class="ui primary button">
-            <i class="play icon"></i>
-            Listen
-          </div>
-        </div>
-      </div>
-      <div class="ui popup">
-        <div class="header">User Rating</div>
-        <div class="ui star rating" data-rating="3"></div>
-      </div>
-    </div>
-    <div class="content-container">
-      <div class="ui card">
-        <div class="image">
-          <%= image_tag("israel.jpg", :alt => "コンテンツ") %>
-        </div>
-        <div class="content">
-          <div class="header">
-            <%= link_to("ユダヤ最強説", "/contents/show") %>
-          </div>
-          <div class="description">
-            "イノベーション大国"イスラエルの秘密
-          </div>
-        </div>
-        <div class="ui two bottom attached buttons">
-          <div class="ui button">
-            <i class="add icon"></i>
-            Queue
-          </div>
-          <div class="ui primary button">
-            <i class="play icon"></i>
-            Listen
-          </div>
-        </div>
-      </div>
-      <div class="ui popup">
-        <div class="header">User Rating</div>
-        <div class="ui star rating" data-rating="3"></div>
-      </div>
-    </div>
-    <div class="content-container">
-      <div class="ui card">
-        <div class="image">
-          <%= image_tag("israel.jpg", :alt => "コンテンツ") %>
-        </div>
-        <div class="content">
-          <div class="header">ユダヤ最強説</div>
-          <div class="description">
-            "イノベーション大国"イスラエルの秘密
-          </div>
-        </div>
-        <div class="ui two bottom attached buttons">
-          <div class="ui button">
-            <i class="add icon"></i>
-            Queue
-          </div>
-          <div class="ui primary button">
-            <i class="play icon"></i>
-            Listen
-          </div>
-        </div>
-      </div>
-      <div class="ui popup">
-        <div class="header">User Rating</div>
-        <div class="ui star rating" data-rating="3"></div>
-      </div>
-    </div>
-    <div class="content-container">
-      <div class="ui card">
-        <div class="image">
-          <%= image_tag("horie.jpg", :alt => "コンテンツ") %>
-        </div>
-        <div class="content">
-          <div class="header">西麻布にサブスクリプション型の銭湯を作りたい</div>
-          <div class="description">
-            堀江貴文が先頭について語る
-          </div>
-        </div>
-        <div class="ui two bottom attached buttons">
-          <div class="ui button">
-            <i class="add icon"></i>
-            Queue
-          </div>
-          <div class="ui primary button">
-            <i class="play icon"></i>
-            Listen
-          </div>
-        </div>
-      </div>
-      <div class="ui popup">
-        <div class="header">User Rating</div>
-        <div class="ui star rating" data-rating="3"></div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui card fluid">
-        <div class="image">
-          <%= image_tag("content1.jpg", :alt => "コンテンツ") %>
-        </div>
-        <div class="content">
-          <div class="meta">
-            <a>ITベンチャーニュース</a>
-          </div>
-          <div class="description">
-            今週のITニュース
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui card fluid">
-        <div class="image">
-          <%= image_tag("content1.jpg", :alt => "コンテンツ") %>
-        </div>
-        <div class="content">
-          <div class="meta">
-            <a>ゼロから一歩ずつ中国語</a>
-          </div>
-          <div class="description">
-            中国語教師の劉さんと学ぶ
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui card fluid">
-        <div class="image">
-          <%= image_tag("content1.jpg", :alt => "コンテンツ") %>
-        </div>
-        <div class="content">
-          <div class="meta">
-            <a>1分でも早く帰りたい人の時間短縮術</a>
-          </div>
-          <div class="description">
-            時間科学者の田中教授が語る
-          </div>
-        </div>
-      </div>
+      <!--<div class="listlist">-->
+        <!--<div class="ui two bottom attached buttons">-->
+          <!--<div class="ui button">-->
+            <!--<i class="add icon"></i>-->
+            <!--次に再生-->
+          <!--</div>-->
+          <!--<div class="ui primary button">-->
+            <!--<i class="play icon"></i>-->
+            <!--Listen-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
     </div>
   </div>
 </div>
