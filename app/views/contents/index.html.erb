@@ -101,6 +101,9 @@
     </div>
   </div>
 </div>
+
+<%= will_paginate @collection, renderer: WillPaginateSemanticUi::ActionView::Renderer %>
+
 <ul class="contents">
   <% @contents.each do |content|%>
     <li>
@@ -118,3 +121,5 @@
     </li>
   <% end %>
 </ul>
+
+<%= will_paginate @collection, renderer: WillPaginateSemanticUi::ActionView::Renderer %>

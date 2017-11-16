@@ -1,6 +1,6 @@
 class ContentsController < ApplicationController
   def index 
-    @contents = Content.all
+    @contents = Content.paginate(page: params[:page])
   end
 
   def show
