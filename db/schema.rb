@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171112104135) do
+ActiveRecord::Schema.define(version: 20171116133235) do
 
   create_table "contents", force: :cascade do |t|
-    t.string "title"
-    t.string "audio1_name"
-    t.string "audio1"
-    t.string "audio2_name"
-    t.string "audio2"
+    t.string "audio_title"
+    t.string "media_name"
+    t.string "media_url"
+    t.string "audio_image"
+    t.string "audio_file"
+    t.string "audio_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "image"
   end
 
 end

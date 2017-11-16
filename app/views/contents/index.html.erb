@@ -116,7 +116,9 @@
         <%= content.audio_image %>
       </div>
       <div id="audio-content">
+        <!-- audioファイルがどう表示されるか確認する -->
         <%= content.audio_file %>
+        <%= audio_tag(content.audio_file, id: "sampleAudio", controls: true)%>
       </div>
     </li>
   <% end %>

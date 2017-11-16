@@ -1,15 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  audio1_name: MyString
-  audio1: MyString
-  audio2_name: MyString
-  audio2: MyString
+  audio_title: MyString
+  media_name: MyString
+  media_url: MyString
+  audio_image: MyString
+  audio_file: MyString
+  audio_type: MyString
 
 two:
-  title: MyString
-  audio1_name: MyString
-  audio1: MyString
-  audio2_name: MyString
-  audio2: MyString
+  audio_title: MyString
+  media_name: MyString
+  media_url: MyString
+  audio_image: MyString
+  audio_file: MyString
+  audio_type: MyString
