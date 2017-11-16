@@ -101,10 +101,20 @@
     </div>
   </div>
 </div>
-<div>
+<ul class="contents">
   <% @contents.each do |content|%>
-    <div class="contents-index-item">
-      <%= content.audio_title %>
-    </div>
+    <li>
+      <div class="ui segment">
+        <%= content.audio_title %>
+        <%= content.media_name %>
+        <%= content.media_url %>
+      </div>
+      <div class="ui image-div">
+        <%= content.audio_image %>
+      </div>
+      <div id="audio-content">
+        <%= content.audio_file %>
+      </div>
+    </li>
   <% end %>
-</div>
+</ul>
