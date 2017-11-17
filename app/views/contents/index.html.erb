@@ -108,17 +108,21 @@
   <% @contents.each do |content|%>
     <li>
       <div class="ui segment">
+        <p>
         <%= content.audio_title %>
+        </p>
+        <h6>
         <%= content.media_name %>
+        </h6>
+        <h7>
         <%= content.media_url %>
-      </div>
-      <div class="ui image-div">
-        <%= content.audio_image %>
-      </div>
-      <div id="audio-content">
-        <!-- audioファイルがどう表示されるか確認する -->
-        <%= content.audio_file %>
-        <%= audio_tag(content.audio_file, id: "sampleAudio", controls: true)%>
+        </h7>
+        <div class="ui image-div">
+          <%= content.audio_image %>
+        </div>
+        <div id="audio-content">
+          <%= audio_tag(content.audio_file, id: "sampleAudio", controls: true)%>
+        </div>
       </div>
     </li>
   <% end %>
