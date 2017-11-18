@@ -17,7 +17,7 @@ class ContentsController < ApplicationController
 
     @content.save
 
-    redirect_to("/")
+    redirect_to("/contents/show")
   end
 
   def edit
@@ -36,6 +36,6 @@ class ContentsController < ApplicationController
 
     @content.save
 
-    redirect_to("/")
+    redirect_to("/contents/show")
   end
 end
