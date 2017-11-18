@@ -1,4 +1,5 @@
 <div class="form-container">
+<<<<<<< HEAD
   <%= form_for @content, :url => {:action => 'create'} do |f| %>
     <div class="ui segment">
       <h3 class="ui">audio_title</h3>
@@ -23,5 +24,23 @@
     　<%= f.submit '登録', :class => 'ui button' %>
       <!-- <input type="submit" value="登録" class="ui button "> -->
     </div>
+=======
+  <%= form_for(@content, url: "/contents/create") do |f| %>
+      <%= f.label :audio_title %>
+      <%= f.text_field :audio_title %>
+      <%= f.label :media_name %>
+      <%= f.text_field :media_name %>
+      <%= f.label :media_url %>
+      <%= f.url_field :media_url, size: "60"%>
+      <%= f.label :audio_image %>
+      <%= f.text_field :audio_image %>
+      <%= f.label :audio_file %>
+      <%= f.text_field :audio_file %>
+      <%= f.label :audio_type %>
+      <%= f.text_field :audio_type %>
+      <div class="ui one bottom attached">
+        <%= f.submit "登録", class: "ui button" %>
+      </div>
+>>>>>>> 192770e90da31e7c7413d7ffc4c99d991fb0ed39
   <% end %>
 </div>

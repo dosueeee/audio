@@ -12,6 +12,7 @@ class ContentsController < ApplicationController
   end
 
   def create
+
     @content = Content.new(content_params)
     if @content.save
       redirect_to @content
@@ -20,7 +21,7 @@ class ContentsController < ApplicationController
       render action: 'new'
     end
 
-    # redirect_to("/")
+    # redirect_to("/") 
   end
 
   def edit
@@ -39,7 +40,7 @@ class ContentsController < ApplicationController
 
     @content.save
 
-    redirect_to("/")
+    redirect_to("/contents/show")
   end
   private
     def content_params
