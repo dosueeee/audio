@@ -8,16 +8,19 @@ class ContentsController < ApplicationController
   end
 
   def new
-
+    @content = Content.new
   end
 
   def create
-    @content = Content.new(audio_title: params[:audio_title], media_name: params[:media_name], media_url: params[:media_url],
-                           audio_image: params[:audio_image], audio_file: params[:audio_file], audio_type: params[:audio_type])
+    @content = Content.new(content_params)
+    if @content.save
+      redirect_to @content
+      # redirect_to("/contents/show")
+    else
+      render action: 'new'
+    end
 
-    @content.save
-
-    redirect_to("/")
+    # redirect_to("/")
   end
 
   def edit
@@ -38,4 +41,11 @@ class ContentsController < ApplicationController
 
     redirect_to("/")
   end
+  private
+    def content_params
+      params.require(:content).permit(:audio_title, :media_name, :media_url, :audio_image, :audio_file, :audio_type)
+      # audio_title: params[:audio_title], media_name: params[:media_name], media_url: params[:media_url],
+      #                      audio_image: params[:audio_image], audio_file: params[:audio_file], audio_type: params[:audio_type]
+    end
+  
 end
