@@ -9,10 +9,10 @@
     <%= @content.media_url %>
   </h7>
   <div class="ui image-div">
-    <!-- < image_tag(@content.audio_image, size: "200x120") > 一旦コメントアウトしておくわ-->
+     <%= image_tag(@content.audio_image, size: "200x120") %>
   </div>
   <div id="audio-content">
-    <!-- < audio_tag(@content.audio_file, id: "sampleAudio", controls: true) >一旦コメントアウトしておくわ -->
+     <%= audio_tag(@content.audio_file, id: "sampleAudio", controls: true) %>
   </div>
   <!--<div class="ui two bottom attached buttons">-->
     <!--<div class="ui button">-->
