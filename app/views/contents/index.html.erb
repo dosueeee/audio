@@ -118,7 +118,7 @@
         <%= content.media_url %>
         </h7>
         <div class="ui image-div">
-          <%= content.audio_image %>
+          <%= image_tag(content.audio_image, size: "200x120") %>
         </div>
         <div id="audio-content">
           <%= audio_tag(content.audio_file, id: "sampleAudio", controls: true)%>
