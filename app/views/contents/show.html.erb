@@ -14,6 +14,11 @@
   <div id="audio-content">
     <%= audio_tag(@content.audio_file, id: "sampleAudio", controls: true)%>
   </div>
+  <!--<div class="ui two bottom attached buttons">-->
+    <!--<div class="ui button">-->
+      <%= link_to("編集", "/contents/#{@content.id}/edit") %>
+    <!--</div>-->
+  <!--</div>-->
 </div>
 
 <!--<div class="ui text container">-->

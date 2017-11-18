@@ -19,4 +19,23 @@ class ContentsController < ApplicationController
 
     redirect_to("/")
   end
+
+  def edit
+    @content = Content.find_by(id: params[:id])
+  end
+
+  def update
+    @content = Content.find_by(id: params[:id])
+
+    @content.audio_title = params[:audio_title]
+    @content.media_name = params[:media_name]
+    @content.media_url =  params[:media_url]
+    @content.audio_image = params[:audio_image]
+    @content.audio_file = params[:audio_file]
+    @content.audio_type = params[:audio_type]
+
+    @content.save
+
+    redirect_to("/")
+  end
 end
