@@ -37,5 +37,7 @@ ul {
 /* ウィンドウ幅が0〜479pxの場合に適用するCSS */
 @media screen and ( max-width:479px )
 {
-
+.form-container {
+margin: 20px;
+}
 }

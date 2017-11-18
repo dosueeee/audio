@@ -1,0 +1,21 @@
+<div class="form-container">
+  <%= form_tag("/contents/create") do %>
+    <div class="ui segment">
+      <h3 class="ui">audio_title</h3>
+      <input type="text" name="audio_title">
+      <h3 class="ui">media_name</h3>
+      <input type="text" name="media_name">
+      <h3 class="ui">media_url</h3>
+      <input type="text" name="media_url">
+      <h3 class="ui">audio_image</h3>
+      <input type="text" name="audio_image">
+      <h3 class="ui">audio_file</h3>
+      <input type="text" name="audio_file">
+      <h3 class="ui">audio_type</h3>
+      <input type="text" name="audio_type">
+    </div>
+    <div class="ui one bottom attached">
+      <input type="submit" value="登録" class="ui button ">
+    </div>
+  <% end %>
+</div>
