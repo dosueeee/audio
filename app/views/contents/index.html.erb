@@ -109,7 +109,7 @@
     <li>
       <div class="ui segment">
         <p>
-        <%= content.audio_title %>
+        <%= link_to(content.audio_title, "/contents/#{content.id}") %>
         </p>
         <h6>
         <%= content.media_name %>

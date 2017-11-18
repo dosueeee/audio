@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get "contents/show" => "contents#show"
   get "contents/new" => "contents#new"
   post "contents/create" => "contents#create"
+  get "contents/:id" => "contents#show"
 end
