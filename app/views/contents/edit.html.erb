@@ -1,28 +1,7 @@
-<!--<div class="form-container">-->
-  <!--<h1>編集する</h1>-->
-      <!--<div class="ui segment">-->
-        <!--<h3 class="ui">audio_title</h3>-->
-        <!--<input type="text" name="audio_title" value="">-->
-        <!--<h3 class="ui">media_name</h3>-->
-        <!--<input type="text" name="media_name">-->
-        <!--<h3 class="ui">media_url</h3>-->
-        <!--<input type="text" name="media_url" size="60">-->
-        <!--<h3 class="ui">audio_image</h3>-->
-        <!--<input type="text" name="audio_image">-->
-        <!--<h3 class="ui">audio_file</h3>-->
-        <!--<input type="text" name="audio_file">-->
-        <!--<h3 class="ui">audio_type</h3>-->
-        <!--<input type="text" name="audio_type">-->
-      <!--</div>-->
-      <!--<div class="ui one bottom attached">-->
-        <!--<input type="submit" value="登録" class="ui button ">-->
-      <!--</div>-->
-<!--</div>-->
-
 <div class="form-container">
   <h1>編集する</h1>
   <div class="ui segment">
-    <%= form_for(@content, url: "/contents/#{@content.id}/update") do |f| %>
+    <%= form_for(@content, url: "/contents/#{@content.id}") do |f| %>
       <%= f.label :audio_title %>
       <%= f.text_field :audio_title %>
       <%= f.label :media_name %>

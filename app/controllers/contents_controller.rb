@@ -16,12 +16,11 @@ class ContentsController < ApplicationController
     @content = Content.new(content_params)
     if @content.save
       redirect_to @content
-      # redirect_to("/contents/show")
+      # redirect_to("/contents/#{@content.id}")
     else
       render action: 'new'
     end
 
-    # redirect_to("/") 
   end
 
   def edit
@@ -38,9 +37,12 @@ class ContentsController < ApplicationController
     @content.audio_file = params[:audio_file]
     @content.audio_type = params[:audio_type]
 
-    @content.save
-
-    redirect_to("/contents/show")
+    if @content.save
+      redirect_to @content
+    # redirect_to("/contents/#{@content.id}")
+    else
+      render action: "edit"
+    end
   end
   private
     def content_params
