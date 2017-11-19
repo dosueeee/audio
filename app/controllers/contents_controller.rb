@@ -15,8 +15,8 @@ class ContentsController < ApplicationController
 
     @content = Content.new(content_params)
     if @content.save
+      flash[:success] = "Updated"
       redirect_to @content
-      # redirect_to("/contents/#{@content.id}")
     else
       render action: 'new'
     end
@@ -29,26 +29,26 @@ class ContentsController < ApplicationController
 
   def update
     @content = Content.find_by(id: params[:id])
-
-    @content.audio_title = params[:audio_title]
-    @content.media_name = params[:media_name]
-    @content.media_url =  params[:media_url]
-    @content.audio_image = params[:audio_image]
-    @content.audio_file = params[:audio_file]
-    @content.audio_type = params[:audio_type]
-
-    if @content.save
+    if @content.update_attributes(content_params)
+      flash[:success] = "Updated"
       redirect_to @content
-    # redirect_to("/contents/#{@content.id}")
     else
-      render action: "edit"
+      render 'edit'
     end
   end
+
+  def destroy
+    Content.find_by(id: params[:id]).destroy
+    flash[:success] = "Deleted"
+    redirect_to("/")
+  end
+
   private
-    def content_params
-      params.require(:content).permit(:audio_title, :media_name, :media_url, :audio_image, :audio_file, :audio_type)
-      # audio_title: params[:audio_title], media_name: params[:media_name], media_url: params[:media_url],
-      #                      audio_image: params[:audio_image], audio_file: params[:audio_file], audio_type: params[:audio_type]
-    end
+
+  def content_params
+    params.require(:content).permit(:audio_title, :media_name, :media_url, :audio_image, :audio_file, :audio_type)
+    # audio_title: params[:audio_title], media_name: params[:media_name], media_url: params[:media_url],
+    #                      audio_image: params[:audio_image], audio_file: params[:audio_file], audio_type: params[:audio_type]
+  end
   
 end

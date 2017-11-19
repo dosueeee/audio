@@ -17,6 +17,7 @@
   <!--<div class="ui two bottom attached buttons">-->
     <!--<div class="ui button">-->
       <%= link_to("編集", "/contents/#{@content.id}/edit") %>
+      <%= link_to("削除", "/contents/#{@content.id}", {method: "delete"})%>
     <!--</div>-->
   <!--</div>-->
 </div>
