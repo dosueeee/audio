@@ -14,20 +14,15 @@
 
 .list-container {
   //text-align: center;
-  padding: 0px 300px 50px 300px;
+  //padding: 0px 300px 50px 300px;
 }
 
 .list-container p {
   font-size: 20px;
 }
 
-
 .listlist {
   width: 400px;
-}
-
-.image-div {
-  margin-left: 20px;
 }
 
 ul {
@@ -37,7 +32,11 @@ ul {
 /* ウィンドウ幅が0〜479pxの場合に適用するCSS */
 @media screen and ( max-width:479px )
 {
-.form-container {
-margin: 20px;
-}
+  .form-container {
+  margin: 20px;
+  }
+
+  .list-container {
+
+  }
 }
