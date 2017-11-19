@@ -6,7 +6,7 @@
     <%= @content.media_name %>
   </h6>
   <h7>
-    <%= @content.media_url %>
+    <%= link_to(@content.media_url, @content.media_url) %>
   </h7>
   <div class="ui image-div">
      <%= image_tag(@content.audio_image, size: "200x120") %>
