@@ -2,7 +2,7 @@
 <%= will_paginate @collection, renderer: WillPaginateSemanticUi::ActionView::Renderer %>
 
 <ul class="list-container">
-  <% @contents.each do |content|%>
+  <% @contents.reverse.each do |content|%>
     <li>
       <div class="ui segment">
         <p>
