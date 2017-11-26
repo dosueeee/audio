@@ -1,4 +1,4 @@
-<div class="ui segment">
+<div class="ui segment show-container">
   <p>
     <%= @content.audio_title %>
   </p>
@@ -12,8 +12,8 @@
   <div class="ui image-div">
      <%= image_tag(@content.audio_image, size: "200x120") %>
   </div>
-  <div id="audio-content ui segment">
-    <div class="audio-div">
+  <div id="audio-content ui raised segments">
+    <div class="audio-div ui segment">
       <div class="file_name">
         <%= @content.audio_file_name %>
       </div>
@@ -21,7 +21,7 @@
        <%= audio_tag(@content.audio_file, id: "sampleAudio", controls: true) %>
       </div>
     </div>
-    <div class="audio-div">
+    <div class="audio-div ui segment">
       <div class="file_name">
         <%= @content.audio_file2_name %>
       </div>
@@ -33,7 +33,7 @@
         <% end %>
       </div>
     </div>
-    <div class="audio-div">
+    <div class="audio-div ui segment">
       <div class="file_name">
         <%= @content.audio_file3_name %>
       </div>
@@ -45,7 +45,7 @@
         <% end %>
       </div>
     </div>
-    <div class="audio-div">
+    <div class="audio-div ui segment">
       <div class="file_name">
         <%= @content.audio_file4_name %>
       </div>
@@ -57,7 +57,7 @@
         <% end %>
       </div>
     </div>
-    <div class="audio-div">
+    <div class="audio-div ui segment">
       <div class="file_name">
         <%= @content.audio_file5_name %>
       </div>
@@ -67,6 +67,16 @@
         <% else %>
             <%= audio_tag("default", id: "sampleAudio", controls: true) %>
         <% end %>
+      </div>
+    </div>
+    <div class="ui two bottom attached buttons">
+      <div class="ui button">
+        <i class="add icon"></i>
+        Queue（準備中）
+      </div>
+      <div class="ui primary button">
+        <i class="play icon"></i>
+        Listen（準備中）
       </div>
     </div>
   </div>

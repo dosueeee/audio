@@ -18,6 +18,7 @@ class ContentsController < ApplicationController
       flash[:success] = "Updated"
       redirect_to @content
     else
+      flash[:danger] = "Not Created"
       render action: 'new'
     end
 
@@ -33,6 +34,7 @@ class ContentsController < ApplicationController
       flash[:success] = "Updated"
       redirect_to @content
     else
+      flash[:danger] = "Not Updated"
       render 'edit'
     end
   end
