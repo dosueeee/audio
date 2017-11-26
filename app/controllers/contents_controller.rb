@@ -46,9 +46,8 @@ class ContentsController < ApplicationController
   private
 
   def content_params
-    params.require(:content).permit(:audio_title, :media_name, :media_url, :audio_image, :audio_file, :audio_type)
-    # audio_title: params[:audio_title], media_name: params[:media_name], media_url: params[:media_url],
-    #                      audio_image: params[:audio_image], audio_file: params[:audio_file], audio_type: params[:audio_type]
+    params.require(:content).permit(:audio_title, :media_name, :media_url, :audio_image, :audio_file, :audio_type, :audio_file_name,
+                                    :audio_file2, :audio_file2_name, :audio_file3, :audio_file3_name, :audio_file4, :audio_file4_name, :audio_file5, :audio_file5_name)
   end
   
 end
