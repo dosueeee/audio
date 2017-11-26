@@ -4,7 +4,7 @@
 <ul class="list-container">
   <% @contents.reverse.each do |content|%>
     <li>
-      <div class="ui segment">
+      <div class="ui segments">
         <p>
         <%= link_to(content.audio_title, "/contents/#{content.id}") %>
         </p>
@@ -16,10 +16,10 @@
           <%= link_to(content.media_url, content.media_url) %>
         </h7>
         <div class="ui image-div">
-          <%= image_tag(content.audio_image, size: "200x120") %>
+          <%= image_tag(content.audio_image, size: "400x240") %>
         </div>
         <div id="audio-content ui segment">
-          <div class="audio-div">
+          <div class="audio-div ui segment">
             <div class="file_name">
               <%= content.audio_file_name %>
             </div>
@@ -27,7 +27,7 @@
               <%= audio_tag(content.audio_file, id: "sampleAudio", controls: true) %>
             </div>
           </div>
-          <div class="audio-div">
+          <div class="audio-div ui segment">
             <div class="file_name">
               <%= content.audio_file2_name %>
             </div>
@@ -39,7 +39,7 @@
               <% end %>
             </div>
           </div>
-          <div class="audio-div">
+          <div class="audio-div ui segment">
             <div class="file_name">
               <%= content.audio_file3_name %>
             </div>
@@ -51,7 +51,7 @@
               <% end %>
             </div>
           </div>
-          <div class="audio-div">
+          <div class="audio-div ui segment">
             <div class="file_name">
               <%= content.audio_file4_name %>
             </div>
@@ -63,7 +63,7 @@
               <% end %>
             </div>
           </div>
-          <div class="audio-div">
+          <div class="audio-div ui segment">
             <div class="file_name">
               <%= content.audio_file5_name %>
             </div>

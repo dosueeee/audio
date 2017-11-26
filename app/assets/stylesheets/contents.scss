@@ -13,7 +13,6 @@
 }
 
 .list-container {
-  //text-align: center;
   padding: 0px 300px 0px 300px;
 }
 
@@ -27,6 +26,10 @@
 
 ul {
   list-style: none;
+}
+
+.admin-container{
+  padding-top: 20px;
 }
 
 /* ウィンドウ幅が0〜479pxの場合に適用するCSS */
