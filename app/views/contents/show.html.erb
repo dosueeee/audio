@@ -12,12 +12,61 @@
   <div class="ui image-div">
      <%= image_tag(@content.audio_image, size: "200x120") %>
   </div>
-  <div id="audio-content">
+  <div id="audio-content ui segment">
     <div class="audio-div">
       <div class="file_name">
+        <%= @content.audio_file_name %>
       </div>
       <div class="audio_file">
        <%= audio_tag(@content.audio_file, id: "sampleAudio", controls: true) %>
+      </div>
+    </div>
+    <div class="audio-div">
+      <div class="file_name">
+        <%= @content.audio_file2_name %>
+      </div>
+      <div class="audio_file">
+        <% if @content.audio_file2 %>
+          <%= audio_tag(@content.audio_file2, id: "sampleAudio", controls: true, alt: "audio_file2") %>
+        <% else %>
+          <%= audio_tag("default", id: "sampleAudio", controls: true) %>
+        <% end %>
+      </div>
+    </div>
+    <div class="audio-div">
+      <div class="file_name">
+        <%= @content.audio_file3_name %>
+      </div>
+      <div class="audio_file">
+        <% if @content.audio_file3 %>
+            <%= audio_tag(@content.audio_file3, id: "sampleAudio", controls: true, alt: "audio_file3") %>
+        <% else %>
+            <%= audio_tag("default", id: "sampleAudio", controls: true) %>
+        <% end %>
+      </div>
+    </div>
+    <div class="audio-div">
+      <div class="file_name">
+        <%= @content.audio_file4_name %>
+      </div>
+      <div class="audio_file">
+        <% if @content.audio_file4 %>
+            <%= audio_tag(@content.audio_file4, id: "sampleAudio", controls: true, alt: "audio_file4") %>
+        <% else %>
+            <%= audio_tag("default", id: "sampleAudio", controls: true) %>
+        <% end %>
+      </div>
+    </div>
+    <div class="audio-div">
+      <div class="file_name">
+        <%= @content.audio_file5_name %>
+      </div>
+      <div class="audio_file">
+        <% if @content.audio_file5 %>
+            <%= audio_tag(@content.audio_file5, id: "sampleAudio", controls: true, alt: "audio_file5") %>
+        <% else %>
+            <%= audio_tag("default", id: "sampleAudio", controls: true) %>
+        <% end %>
       </div>
     </div>
   </div>
