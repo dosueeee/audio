@@ -13,7 +13,13 @@
      <%= image_tag(@content.audio_image, size: "200x120") %>
   </div>
   <div id="audio-content">
-     <%= audio_tag(@content.audio_file, id: "sampleAudio", controls: true) %>
+    <div class="audio-div">
+      <div class="file_name">
+      </div>
+      <div class="audio_file">
+       <%= audio_tag(@content.audio_file, id: "sampleAudio", controls: true) %>
+      </div>
+    </div>
   </div>
   <div class="ui two bottom attached buttons">
     <div class="ui button">
